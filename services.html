@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Services | Julius Bongole</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body class="bg-slate-50 text-slate-800 font-sans antialiased overflow-x-hidden">
+
+    <nav class="fixed top-0 left-0 right-0 z-50 border-b border-slate-200/60 backdrop-blur-xl bg-white/70">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 h-20 flex items-center justify-between">
+            <a href="index.html" class="text-xl font-black tracking-widest text-slate-900">JULIUS BONGOLE<span class="text-blue-600">.</span></a>
+            <div class="hidden md:flex space-x-8 text-xs font-bold tracking-wider uppercase items-center">
+                <a href="index.html" class="nav-link text-slate-600 hover:text-slate-900 transition-colors">Home</a>
+                <a href="services.html" class="nav-link text-blue-600">Services</a>
+                <a href="academy.html" class="nav-link text-slate-600 hover:text-slate-900 transition-colors">Self-Study Hub</a>
+                <a href="login.html" class="nav-link text-slate-600 hover:text-slate-900 transition-colors">Sign In</a>
+            </div>
+            <button id="menuBtn" class="md:hidden text-slate-800 p-2"><i class="fas fa-bars text-xl"></i></button>
+        </div>
+    </nav>
+
+    <section class="pt-32 sm:pt-40 pb-20 px-4 sm:px-6 max-w-6xl mx-auto min-h-screen">
+        <div class="text-center mb-16 animate-fade-in">
+            <h2 class="text-3xl sm:text-5xl font-black text-slate-900 mb-4">Core Competencies</h2>
+            <p class="text-sm sm:text-base text-slate-500 font-normal max-w-2xl mx-auto">High-tier technical services meticulously engineered to fulfill the requirements of modern enterprise landscapes.</p>
+            <div class="w-12 h-[2px] bg-blue-600 mx-auto mt-4"></div>
+        </div>
+
+        <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
+            <div class="modern-card bg-white border border-slate-200 p-6 sm:p-8 rounded-2xl shadow-sm">
+                <div class="w-10 h-10 bg-blue-50 text-blue-600 rounded-lg flex items-center justify-center text-lg mb-6"><i class="fas fa-code"></i></div>
+                <h3 class="text-xl font-bold text-slate-900 mb-3">Web Development</h3>
+                <p class="text-slate-600 text-sm leading-relaxed font-normal mb-4">
+                    Architecting high-performance web systems using cutting-edge frameworks like React, Node.js, and Clean Architecture principles. We construct scalable business tools, institutional portals, and robust API-driven applications designed to load fluidly across desktop and mobile form-factors.
+                </p>
+                <span class="text-xs font-mono text-blue-600 block border-t border-slate-100 pt-3">Stack: HTML5, CSS3, JavaScript, RESTful APIs, Secure Sessions</span>
+            </div>
+
+            <div class="modern-card bg-white border border-slate-200 p-6 sm:p-8 rounded-2xl shadow-sm">
+                <div class="w-10 h-10 bg-blue-50 text-blue-600 rounded-lg flex items-center justify-center text-lg mb-6"><i class="fas fa-bezier-curve"></i></div>
+                <h3 class="text-xl font-bold text-slate-900 mb-3">Graphic Design</h3>
+                <p class="text-slate-600 text-sm leading-relaxed font-normal mb-4">
+                    Engineering impactful brand identities that communicate value. This includes systematic logo generation, vectorized marketing assets, digital publication assets, and comprehensive corporate design guidelines developed through advanced mathematical alignment and layout software.
+                </p>
+                <span class="text-xs font-mono text-blue-600 block border-t border-slate-100 pt-3">Focus: Typography hierarchy, Color systems, UI Elements, Vector Layouts</span>
+            </div>
+
+            <div class="modern-card bg-white border border-slate-200 p-6 sm:p-8 rounded-2xl shadow-sm">
+                <div class="w-10 h-10 bg-blue-50 text-blue-600 rounded-lg flex items-center justify-center text-lg mb-6"><i class="fas fa-database"></i></div>
+                <h3 class="text-xl font-bold text-slate-900 mb-3">Database Development</h3>
+                <p class="text-slate-600 text-sm leading-relaxed font-normal mb-4">
+                    Designing transactional relational schemas (PostgreSQL, MySQL) and flexible NoSQL models (MongoDB) capable of parsing dense datasets in milliseconds. We prioritize high-availability clustering, relational data normalization, strict query profiling, and automated database disaster recovery.
+                </p>
+                <span class="text-xs font-mono text-blue-600 block border-t border-slate-100 pt-3">Structure: Query Tuning, Indice Structuring, Constraints, Backups Encryption</span>
+            </div>
+
+            <div class="modern-card bg-white border border-slate-200 p-6 sm:p-8 rounded-2xl shadow-sm">
+                <div class="w-10 h-10 bg-blue-50 text-blue-600 rounded-lg flex items-center justify-center text-lg mb-6"><i class="fas fa-server"></i></div>
+                <h3 class="text-xl font-bold text-slate-900 mb-3">System Administration</h3>
+                <p class="text-slate-600 text-sm leading-relaxed font-normal mb-4">
+                    Orchestrating dedicated environments (Linux/Windows Server clusters) alongside secure hypervisors and public cloud frameworks (AWS, DigitalOcean). We implement localized edge firewalls, access control paradigms, and background daemon automation to guarantee 99.9% application uptime.
+                </p>
+                <span class="text-xs font-mono text-blue-600 block border-t border-slate-100 pt-3">Operations: Linux Administration, Bash Scripting, Network Hardening, Cloud Units</span>
+            </div>
+        </div>
+    </section>
+
+    <script src="script.js"></script>
+</body>
+</html>

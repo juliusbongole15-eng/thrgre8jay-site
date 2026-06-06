@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sign In | Julius Bongole</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body class="bg-slate-50 text-slate-800 font-sans antialiased flex items-center justify-center min-h-screen px-4">
+
+    <div class="w-full max-w-md bg-white border border-slate-200 rounded-2xl p-6 sm:p-8 shadow-xl relative">
+        <div class="text-center mb-8">
+            <a href="index.html" class="text-lg font-black tracking-widest text-slate-900 block mb-2">JULIUS BONGOLE<span class="text-blue-600">.</span></a>
+            <h2 class="text-xl font-bold text-slate-900">Student Gateway</h2>
+            <p class="text-slate-50 text-xs font-normal mt-1">Authenticate credentials to synchronize your active self-study checkpoints.</p>
+        </div>
+        
+        <form id="loginForm" class="space-y-4">
+            <input type="email" placeholder="Student Email Address" required class="w-full bg-slate-50 border border-slate-200 rounded-xl px-4 py-3.5 text-sm text-slate-900 focus:outline-none focus:border-blue-500 transition-colors">
+            <input type="password" placeholder="Access Token / Password" required class="w-full bg-slate-50 border border-slate-200 rounded-xl px-4 py-3.5 text-sm text-slate-900 focus:outline-none focus:border-blue-500 transition-colors">
+            <button type="submit" class="w-full bg-blue-600 text-white font-bold py-4 rounded-xl text-xs uppercase tracking-wider transition-all duration-300 hover:bg-slate-900 shadow-md shadow-blue-600/10">
+                Initialize Portal Session
+            </button>
+        </form>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>

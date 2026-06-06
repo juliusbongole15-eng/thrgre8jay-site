@@ -1,0 +1,60 @@
+/* --- PREMIUM GLOW & REVEAL EFFECTS --- */
+
+.nav-link {
+    position: relative;
+}
+.nav-link::after {
+    content: '';
+    position: absolute;
+    width: 0;
+    height: 2px;
+    bottom: -4px;
+    left: 0;
+    background-color: #2563eb;
+    transition: width 0.3s ease;
+}
+.nav-link:hover::after {
+    width: 100%;
+}
+
+/* Smooth Card Interactivity */
+.modern-card, .tutorial-card {
+    transition: all 0.4s cubic-bezier(0.16, 1, 0.3, 1);
+}
+@media (min-width: 768px) {
+    .modern-card:hover, .tutorial-card:hover {
+        transform: translateY(-6px);
+        border-color: #2563eb;
+        box-shadow: 0 22px 45px -15px rgba(37, 99, 235, 0.12);
+    }
+}
+
+::selection {
+    background-color: #2563eb;
+    color: #ffffff;
+}
+
+/* EFFECT MPYA: Mng'ao wa Background unaovuta hisia */
+@keyframes pulseGlow {
+    0%, 100% { transform: scale(1); opacity: 0.08; }
+    50% { transform: scale(1.15); opacity: 0.15; }
+}
+.animate-pulse-glow {
+    animation: pulseGlow 8s ease-in-out infinite;
+}
+
+/* EFFECT MPYA: Kitu kinapofunguka kinatoka chini kuja juu kwa madaha */
+@keyframes revealUp {
+    from { opacity: 0; transform: translateY(30px); filter: blur(5px); }
+    to { opacity: 1; transform: translateY(0); filter: blur(0); }
+}
+.animate-reveal-up {
+    animation: revealUp 0.9s cubic-bezier(0.16, 1, 0.3, 1) forwards;
+}
+
+@keyframes blink {
+    50% { border-color: transparent; }
+}
+.animate-blink {
+    animation: blink 0.8s step-end infinite;
+}

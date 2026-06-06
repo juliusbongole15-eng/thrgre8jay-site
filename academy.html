@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Academy | Julius Bongole</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link class="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body class="bg-slate-50 text-slate-800 font-sans antialiased overflow-x-hidden">
+
+    <nav class="fixed top-0 left-0 right-0 z-50 border-b border-slate-200/60 backdrop-blur-xl bg-white/70">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 h-20 flex items-center justify-between">
+            <a href="index.html" class="text-xl font-black tracking-widest text-slate-900">JULIUS BONGOLE<span class="text-blue-600">.</span></a>
+            <div class="hidden md:flex space-x-8 text-xs font-bold tracking-wider uppercase items-center">
+                <a href="index.html" class="nav-link text-slate-600 hover:text-slate-900 transition-colors">Home</a>
+                <a href="services.html" class="nav-link text-slate-600 hover:text-slate-900 transition-colors">Services</a>
+                <a href="academy.html" class="nav-link text-blue-600">Self-Study Hub</a>
+                <a href="login.html" class="nav-link text-slate-600 hover:text-slate-900 transition-colors">Sign In</a>
+            </div>
+            <button id="menuBtn" class="md:hidden text-slate-800 p-2"><i class="fas fa-bars text-xl"></i></button>
+        </div>
+    </nav>
+
+    <section class="pt-32 sm:pt-40 pb-20 px-4 sm:px-6 max-w-6xl mx-auto min-h-screen">
+        <div class="text-center mb-12 animate-reveal-up">
+            <h2 class="text-3xl sm:text-5xl font-black text-slate-900 mb-4">Open Education Portal</h2>
+            <p class="text-sm text-slate-500 font-normal max-w-xl mx-auto">Explore these highly-detailed modules engineered to help you master elite, industry-standard technical skills at your own pace.</p>
+            <div class="w-12 h-[2px] bg-blue-600 mx-auto mt-4"></div>
+        </div>
+
+        <div class="flex justify-center gap-2 mb-12 flex-wrap text-xs tracking-wider uppercase px-2">
+            <button onclick="filterTutorials('all')" class="filter-btn px-5 py-3 rounded-lg bg-blue-600 text-white font-bold active-filter transition-all shadow-md shadow-blue-600/10">All Modules</button>
+            <button onclick="filterTutorials('coding')" class="filter-btn px-5 py-3 rounded-lg bg-white border border-slate-200 text-slate-600 font-bold transition-all">Web & Coding</button>
+            <button onclick="filterTutorials('design')" class="filter-btn px-5 py-3 rounded-lg bg-white border border-slate-200 text-slate-600 font-bold transition-all">Graphics Theory</button>
+        </div>
+
+        <div class="grid grid-cols-1 md:grid-cols-2 gap-8" id="tutorials-container">
+            <!-- Lesson 1 (Image Showcase Layout) -->
+            <div class="tutorial-card bg-white border border-slate-200 rounded-2xl overflow-hidden flex flex-col justify-between shadow-sm animate-reveal-up" data-category="coding">
+                <img src="https://images.unsplash.com/photo-1517694712202-14dd9538aa97?auto=format&fit=crop&w=600&q=80" alt="JS Async Preview" class="w-full h-48 object-cover border-b border-slate-100">
+                
+                <div class="p-6 sm:p-8 flex-1 flex flex-col justify-between">
+                    <div>
+                        <div class="flex items-center justify-between pb-3 mb-3 border-b border-slate-100">
+                            <span class="text-xs uppercase tracking-widest text-blue-600 font-mono font-bold">Web / Code</span>
+                            <span class="text-xs text-slate-400 font-mono"><i class="far fa-clock mr-1"></i> 45 Mins</span>
+                        </div>
+                        <h3 class="text-xl font-bold text-slate-900 mb-3">Mastering JavaScript Asynchronous Execution</h3>
+                        <p class="text-slate-600 text-sm font-normal leading-relaxed mb-4">
+                            Deep dive exploration focusing on non-blocking algorithmic pipelines, Event Loops, Promises, and unified Async/Await architectures.
+                        </p>
+                    </div>
+                    <button onclick="somaMakala('JavaScript Masterclass')" class="w-full bg-slate-100 border border-slate-200 hover:border-blue-500 hover:bg-blue-50 hover:text-blue-600 py-3.5 rounded-xl text-xs uppercase tracking-wider font-bold transition-all mt-4">Launch Lesson</button>
+                </div>
+            </div>
+
+            <!-- Lesson 2 (Video Embed Showcase Layout) -->
+            <div class="tutorial-card bg-white border border-slate-200 rounded-2xl overflow-hidden flex flex-col justify-between shadow-sm animate-reveal-up" style="animation-delay: 0.2s;" data-category="design">
+                <iframe class="w-full h-48" src="https://www.youtube.com/embed/dQw4w9WgXcQ" title="Lesson Video" frameborder="0" allowfullscreen></iframe>
+                
+                <div class="p-6 sm:p-8 flex-1 flex flex-col justify-between">
+                    <div>
+                        <div class="flex items-center justify-between pb-3 mb-3 border-b border-slate-100">
+                            <span class="text-xs uppercase tracking-widest text-blue-600 font-mono font-bold">Graphics / Theory</span>
+                            <span class="text-xs text-slate-400 font-mono"><i class="far fa-clock mr-1"></i> 30 Mins</span>
+                        </div>
+                        <h3 class="text-xl font-bold text-slate-900 mb-3">Visual Hierarchy Theories & Color Systems</h3>
+                        <p class="text-slate-600 text-sm font-normal leading-relaxed mb-4">
+                            Understanding granular artistic contrast rules, balanced visual weights, geometric layouts, and industrial digital color system spaces.
+                        </p>
+                    </div>
+                    <button onclick="somaMakala('Design Theory Mastery')" class="w-full bg-slate-100 border border-slate-200 hover:border-blue-500 hover:bg-blue-50 hover:text-blue-600 py-3.5 rounded-xl text-xs uppercase tracking-wider font-bold transition-all mt-4">Launch Lesson</button>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <script src="script.js"></script>
+</body>
+</html>
